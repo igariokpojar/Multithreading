@@ -12,8 +12,8 @@ public class VirtualThreadsDemo {
         List<Thread> virtualThreads = new ArrayList<>();
 
         for (int i = 0; i < NUMBER_OF_VIRTUAL_THREADS; i++) {
-            Thread virtualThread = Thread.ofVirtual().unstarted(runnable);
-            virtualThreads.add(virtualThread);
+           // Thread virtualThread = Thread.ofVirtual().unstarted(runnable);
+           // virtualThreads.add(virtualThread);
         }
 
         for (Thread virtualThread : virtualThreads) {
